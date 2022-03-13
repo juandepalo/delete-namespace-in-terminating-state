@@ -1,3 +1,4 @@
+#!/bin/bash
 push(){
     curl -k -H "Content-Type: application/json" -X PUT --data-binary @$i.json http://127.0.0.1:8001/api/v1/namespaces/$i/finalize
 }
@@ -21,8 +22,7 @@ findline(){
     return $number
 }
 
-#!/bin/bash
-echo "find namespaces"
+echo "Find namespaces"
 ns=`kubectl get namespaces --all-namespaces | grep Terminating | awk {'print $1'}` 
 for  i in $ns
 do
