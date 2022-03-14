@@ -10,5 +10,10 @@ referencia: https://www.ibm.com/docs/en/cloud-private/3.2.0?topic=console-namesp
 * Tener en ejecución el proxy de kubectl:
   
   kubectl proxy
+  
+  
+* Ejecutar:
+
+  . ./deletenamespaces.sh
 
   
